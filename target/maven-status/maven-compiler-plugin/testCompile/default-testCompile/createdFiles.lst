@@ -1,0 +1,9 @@
+stepDefinitions\LaptopStepDef.class
+stepDefinitions\RegisterStepDef.class
+stepDefinitions\Initialiser.class
+stepDefinitions\HomePageStepDef.class
+stepDefinitions\DesktopStepDef.class
+stepDefinitions\RetailPageStepDef.class
+runner\TestRunnerr.class
+stepDefinitions\LoginnStepDef.class
+stepDefinitions\TestStepDeff.class

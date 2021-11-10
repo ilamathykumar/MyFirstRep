@@ -8,6 +8,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.LoginPageObject;
+import utilities.UtilityClass;
 
 
 public class LoginnStepDef extends Basee {
@@ -22,13 +23,15 @@ public class LoginnStepDef extends Basee {
 
 	@Given("^user is on Retail website$")
 	public void user_is_on_Retail_website() {
-		String actualPageTitile = driver.getTitle();
+		String actualPageTitle = driver.getTitle();
 		String expectedPageTitle ="TEK SCHOOL";
 		// Assertion is to verify actual meets the expected 
 		// if actual does not equals to expected value then execution will stop 
 		// and test step will fail.
-		Assert.assertEquals(expectedPageTitle, actualPageTitile);
+		Assert.assertEquals(expectedPageTitle, actualPageTitle);
 		logger.info("Actual title is matching with the expected title");
+		 UtilityClass.takeScreenShot();
+
 	}
 
 	@When("^user click on Myaccount$")
@@ -64,6 +67,7 @@ public class LoginnStepDef extends Basee {
 		// if myAccountText is not present or displayed it will fail
 		Assert.assertTrue(loginPageObject.myAccountTextisPresent());
 		logger.info("user is logged into myaccount dashboard");
+		 UtilityClass.takeScreenShot();
 
 	}
 

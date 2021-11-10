@@ -1,0 +1,16 @@
+pageObjects\RegisterPageObject.class
+pageObjects\RetailPagePageObject.class
+pageObjects\PhonePDAsPageObject.class
+pageObjects\TestPageObjectt.class
+pageObjects\HomePageObject.class
+pageObjects\SoftwarePageObject.class
+pageObjects\TabletspageObject.class
+core\Basee.class
+pageObjects\DesktopPageObject.class
+pageObjects\MP3PlayersPageObject.class
+utilities\UtilityClass.class
+pageObjects\ComponentsPageObject.class
+utilities\CucumberReportingConfig.class
+pageObjects\CamerasPageObject.class
+pageObjects\LaptopsPageObject.class
+pageObjects\LoginPageObject.class

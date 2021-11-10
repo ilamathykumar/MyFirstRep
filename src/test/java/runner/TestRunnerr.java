@@ -16,7 +16,7 @@ import utilities.CucumberReportingConfig;
 		//PlugIn -- for generating a readable report
 		features = "classpath:features",
 		glue = "stepDefinitions",
-		tags = "@RegisterTest",
+		tags = "@smokeTest",
 		dryRun = false,
 		monochrome = true,
 		strict = true,

@@ -27,8 +27,25 @@ public class ComponentsPageObject extends Basee{
 	@FindBy(xpath = "//a[text()='Web Cameras (0)']")
 	private WebElement webCameras;
 	
+	@FindBy(xpath = "//a[text()='Show All Components']")
+	private WebElement showAllComponents;
+	
 	@FindBy(xpath = "/a[contains(text(),'Continue')]")
 	private WebElement continueMice;
+	
+	@FindBy(xpath="//a[text()='test 1 (0)']")
+	private WebElement test1 ;
+	@FindBy(xpath="//a[text()='test 2 (0)']")
+	private WebElement test2 ;
+	@FindBy(xpath="//button[@id='list-view']")
+	private WebElement listView ;
+	@FindBy(xpath="//button[@id='grid-view']")
+	private WebElement gridView ;
+	@FindBy(xpath="//a[@id='compare-total']")
+	private WebElement productCompare ;
+
+
+	
 
 	@FindBy(xpath = "//div[@id='banner0']//img[@class='img-responsive']")
 	private WebElement appleImage;
@@ -62,14 +79,15 @@ public class ComponentsPageObject extends Basee{
 	private WebElement continueScanners;
 	
 	@FindBy(xpath = "//h2[text()='Web Cameras']")
-	private WebElement webCamersList;
+	private WebElement webCamerasList;
 	@FindBy(xpath = "/a[contains(text(),'Continue')]")
 	private WebElement continueWebCameras;
 	@FindBy(xpath = "/h2[contains(text(),'Components')]")
 	private WebElement componentsList;
 	@FindBy(xpath = "/h3[contains(text(),'Refine Search')]")
 	private WebElement refineSearchList;
-
+	
+	
 
 	
 

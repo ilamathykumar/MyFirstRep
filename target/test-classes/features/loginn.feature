@@ -15,14 +15,12 @@ Background:
     Given user is on Retail website
     When user click on Myaccount
     
-@smokeTest  @Regression @endtoendTesting
 Scenario: Retail website Login test 
 	And user click on Login option
 	And user enter userName 'eagles@tekschool.us' and password 'eagles'
 	And user click on Login Button
 	Then user should be logged in to Myaccount dashboard
 	
-@endtoendTesting  @smokeTest
 Scenario Outline: Retail website Login test with multiple accounts 
 	And user click on Login option
 	And user enter userName '<userName>' and password '<password>'
