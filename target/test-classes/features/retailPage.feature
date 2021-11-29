@@ -9,6 +9,7 @@ And User click on Login button
 Then User should be logged in to MyAccount dashboard
 
 
+@smokeTesting
 Scenario: Register as an Affiliate user with Cheque Payment Method
 When User click on ‘Register for an Affiliate Account’ link 
 And User fill affiliate form with below information
@@ -19,6 +20,7 @@ And User click on Continue button
 Then User should see a success message
 
 
+@smokeTesting
 Scenario: Edit your affiliate information from Cheque payment method to Bank Transfer
 When User click on ‘Edit your affiliate informationlink 
 And user click on Bank Transfer radio button
@@ -29,6 +31,7 @@ And User click on Continue button
 Then User should see a success message 
 
 
+@smokeTesting
 Scenario: Edit your account Information 
 When User click on ‘Edit your account information’ link 
 And User modify below information 
