@@ -1,14 +1,15 @@
 Feature:   - for this feature you have to have an existing account
 
-
-
-Scenario: Register as an Affiliate user with Cheque Payment Method
+Background:
 Given User is on Retail website 
 And User click  on MyAccount
 When  User click on Login 
 And User enter username 'ku@gmail.com' and password 'saikanish12'
 And User click on Login button
 Then User should be logged in to MyAccount dashboard
+
+
+Scenario: Register as an Affiliate user with Cheque Payment Method
 When User click on ‘Register for an Affiliate Account’ link 
 And User fill affiliate form with below information
 |compName|websiteName|taxNo|chequepayee|
@@ -19,12 +20,6 @@ Then User should see a success message
 
 
 Scenario: Edit your affiliate information from Cheque payment method to Bank Transfer
-Given User is on Retail website 
-And User click  on MyAccount
-When  User click on Login 
-And User enter username 'ku@gmail.com' and password 'saikanish12' 
-And User click on Login button
-Then User should be logged in to MyAccount dashboard
 When User click on ‘Edit your affiliate informationlink 
 And user click on Bank Transfer radio button
 And User fill Bank information with below information
@@ -35,12 +30,6 @@ Then User should see a success message
 
 
 Scenario: Edit your account Information 
-Given User is on Retail website 
-And User click  on MyAccount
-When  User click on Login 
-And User enter username 'ku@gmail.com' and password 'saikanish12' 
-And User click on Login button
-Then User should be logged in to MyAccount dashboard
 When User click on ‘Edit your account information’ link 
 And User modify below information 
 |fName|lName|e_mail|phoneValue|
